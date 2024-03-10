@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="style.css" />
-    <title>Sim ou Não</title>
+    <title>Frequencia LT2M</title>
     <style>
       .logo {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;
@@ -21,6 +21,11 @@
         height: auto;
         width: 80%;
       }
+
+      .submit-button {
+        text-align: center;
+        margin-top: 20px;
+      }
     </style>
   </head>
   <body>
@@ -29,9 +34,12 @@
         <img src="logo.png" alt="Logo" />
       </div>
       <div class="question" id="question">
-        <p>Olá, boa noite!</p>
+        <p>Insira sua Matricula:</p>
         <div class="buttons">
-          <input type="text" id="input" placeholder="Insira sua Matricula" />
+          <input type="text" id="input" placeholder="Ex:2024000024" />
+        </div>
+        <div class="submit-button">
+          <button type="button" onclick="redirectToSubpage()">Enviar</button>
         </div>
       </div>
     </div>
